@@ -8,9 +8,8 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import java.util.Properties;
 
 public class Product {
-
     /**
-     * 单独发送
+     * 单条消息发送
      */
     /*public static void main(String[] args) {
         Properties props = new Properties();
@@ -65,11 +64,6 @@ public class Product {
        }
         long endTime = System.currentTimeMillis();
         System.err.println(endTime-startTime);
-//        try {
-//            Thread.sleep(6000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
         producer.close();
     }
 
